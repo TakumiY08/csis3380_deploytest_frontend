@@ -10,7 +10,7 @@ export default function CreateTask() {
         const activityVar = { activity: activity};
 
         axios
-        .post('https://csis3380-deploytest.vercel.app/add', activityVar)
+        .post('https://csis3380-deploytest.vercel.app/activity/add', activityVar)
         .then((res) => {
             window.location = '/';
         })
